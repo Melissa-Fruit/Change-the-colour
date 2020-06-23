@@ -2,30 +2,62 @@
   body {
     background-color: red;
   }
-
+  /*
   #medium,
   #large {
     display: none;
-  }
+  }*/
 }
 @media only screen and (max-width: 768px) and (min-width: 300px) {
   body {
     background-color: green;
     font-size: x-large;
   }
-  #small,
+  #small{
+      width: 66%;
+  }
+  #medium{
+      width: 33%;
+  }
+  #large{
+      width: 100%;
+  }
+  /* #small,
   #large {
     display: none;
-  }
+  }*/
 }
 
 @media only screen and (min-width: 769px) {
   body {
     background-color: blue;
     font-size: xx-large;
+    display: flex;
+    flex-direction: column;
   }
-  #small,
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+  
+  }
+  
+  .flex-container > div {
+    
+    width: 100%;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  /* #small,
   #medium {
     display: none;
-  }
+  }*/
 }
+#small {
+}
+
+#medium {
+}
+
+#large {
+ 
